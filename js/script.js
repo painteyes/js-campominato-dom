@@ -38,14 +38,14 @@
                         // la partita termina   
                             // [] 
 
-        // ALTRIMENTI
-            // SE
-                // il numero non è già incluso nell'array che conta i click azzeccati
-                    // [] Controllo, con l'if, se l'array include il textContent della cella
+        
+    // ALTRIMENTI SE
+        // il numero non è già incluso nell'array che conta i click azzeccati
+            // [] Controllo, con l'if, se l'array include il textContent della cella
 
-                        // la cella cliccata si colora di azzurro e l'utente può continuare a cliccare sulle altre celle
-                            // [] Aggiungo una classe active alla cella 
-                            // [] Aggiungo il textContent della cella all'array che conta i click azzeccati
+                // la cella cliccata si colora di azzurro e l'utente può continuare a cliccare sulle altre celle
+                    // [] Aggiungo una classe active alla cella 
+                    // [] Aggiungo il textContent della cella all'array che conta i click azzeccati
                 
 // Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.
     // [] Stampo un messaggio concatenando una stringa all'array.lenght che conta i click azzeccati
