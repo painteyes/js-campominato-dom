@@ -61,7 +61,7 @@
 // CLICKING ON THE PLAY BUTTON SHOWS THE GRID WITH THE SQUARES
 document.getElementById('play').addEventListener('click', startGame);
 
-// -----------------------------------------------------------------------------------------------
+// ------------------------
 // FUNCTIONS RELATED TO DOM
 // ------------------------
 
@@ -70,7 +70,7 @@ function handleSquareClick() {
     this.classList.add('active');
 }
 
-// -----------------------------------------------------------------------------------------------
+// ---------
 // FUNCTIONS
 // ---------
 
