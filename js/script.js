@@ -1,3 +1,7 @@
+// 
+// ANALISI
+// 
+
 // L'utente indica un livello di difficoltà in base al quale viene generata una griglia di gioco quadrata, in cui ogni cella contiene un numero tra quelli compresi in un range:
 // con difficoltà 1 => tra 1 e 100
 // con difficoltà 2 => tra 1 e 81
@@ -50,6 +54,9 @@
 // [] 1- quando si clicca su una bomba e finisce la partita, evitare che si possa cliccare su altre celle
 // [] 2- quando si clicca su una bomba e finisce la partita, il software scopre tutte le bombe nascoste
 
+// 
+// LOGICA
+// 
 
 // CLICKING ON THE PLAY BUTTON SHOWS THE GRID WITH THE SQUARES
 document.getElementById('play').addEventListener('click', startGame);
