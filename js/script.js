@@ -8,8 +8,8 @@
 // con difficoltà 3 => tra 1 e 49
 
 // Il computer deve generare 16 numeri casuali nello stesso range della difficoltà prescelta: le bombe. I numeri nella lista delle bombe non possono essere duplicati.
-        // [] Creo un array vuoto
-        // [] Popolo, con un ciclo while, l'array di numeri univoci nel (range della difficoltà prescelta) fino a quando non contiene 16 elementi
+        // [] Creo un array vuoto che conterrà i numeri nelle quali si trovano le bombe
+        // [] Popolo, con un ciclo while, l'array con 16 numeri non duplicati compresi nel range tra 1 e numberOfSquares
 
 // In seguito l'utente clicca su una cella: 
     // [] Aggiungo un eventListener al click della cella
