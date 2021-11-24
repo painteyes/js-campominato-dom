@@ -8,7 +8,7 @@
 // con difficoltà 3 => tra 1 e 49
 
 // Il computer deve generare 16 numeri casuali nello stesso range della difficoltà prescelta: le bombe. I numeri nella lista delle bombe non possono essere duplicati.
-        // [] Creo un array vuoto che conterrà i numeri nelle quali si trovano le bombe
+        // [] Creo un array vuoto che conterrà i numeri nelle quali si troveranno le bombe
         // [] Popolo, con un ciclo while, l'array con 16 numeri non duplicati compresi nel range tra 1 e numberOfSquares
 
 // In seguito l'utente clicca su una cella: 
@@ -25,7 +25,7 @@
             // [] Aggiungo il textContent della cella cliccata
 
 // Quando il giocatore  raggiunge il numero massimo possibile di numeri consentiti la partita termina
-    // [] Creo una variabile con il numero massimo di tentativi possibili -> let .... = numero massimo di numeri nel range della difficoltà prescelta - il numero delle bombe (16)
+    // [] Calcolare il numero massimo di tentativi possibili -> numberOfSquares - la lunghezza dell'array che contiene i numeri nelle quali si trovano le bombe
     // [] Controllo, con l'if, se la variabile === lunghezza dell'array che conta i click azzeccati
     // [] ?''La partita termina''?
 
