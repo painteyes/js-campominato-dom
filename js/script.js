@@ -1,33 +1,30 @@
-// Consegna
-
-// Copiamo la griglia fatta ieri nella nuova repo e aggiungiamo la logica del gioco (attenzione: non bisogna copiare tutta la cartella dell'esercizio ma solo l'index.html, e le cartelle js/ css/ con i relativi script e fogli di stile, per evitare problemi con l'inizializzazione di git).
-
 // L'utente indica un livello di difficoltà in base al quale viene generata una griglia di gioco quadrata, in cui ogni cella contiene un numero tra quelli compresi in un range:
 // con difficoltà 1 => tra 1 e 100
 // con difficoltà 2 => tra 1 e 81
 // con difficoltà 3 => tra 1 e 49
 
-// Il computer deve generare 16 numeri casuali nello stesso range della difficoltà prescelta: le bombe. I numeri nella lista delle bombe non possono essere duplicati.
+// L'utente clicca su una cella: 
+    // [] Aggiungo un eventListener al click della cella
+
+    // Il computer deve generare 16 numeri casuali nello stesso range della difficoltà prescelta: le bombe. I numeri nella lista delle bombe non possono essere duplicati.
         // [] Creo un array vuoto che conterrà i numeri nelle quali si troveranno le bombe
         // [] Popolo, con un ciclo while, l'array con 16 numeri non duplicati compresi nel range tra 1 e numberOfSquares
 
-// In seguito l'utente clicca su una cella: 
-    // [] Aggiungo un eventListener al click della cella
+        // La partita termina
+            // se il numero è presente nella lista dei numeri generati - abbiamo calpestato una bomba - la cella si colora di rosso e la partita termina,
+                // [] Controllo, con l'if,  se il textContent della cella è incluso nell'arra   y di 16 numeri
+                // [] Aggiungo la classe red alla cella
+                // [] ?''La partita termina''?
 
-        // se il numero è presente nella lista dei numeri generati - abbiamo calpestato una bomba - la cella si colora di rosso e la partita termina,
-            // [] Controllo, con l'if,  se il textContent della cella è incluso nell'array di 16 numeri
-            // [] Aggiungo la classe red alla cella
-            // [] ?''La partita termina''?
+            // se il giocatore  raggiunge il numero massimo possibile di numeri consentiti la partita termina
+                // [] Calcolare il numero massimo di tentativi possibili -> numberOfSquares - la lunghezza dell'array che contiene i numeri nelle quali si trovano le bombe
+                // [] Controllo, con l'if, se la variabile === lunghezza dell'array che conta i click azzeccati
+                // [] ?''La partita termina''?
 
         // altrimenti la cella cliccata si colora di azzurro e l'utente può continuare a cliccare sulle altre celle.
             // [] Aggiungo una classe active alla cella 
             // [] Creo un array vuoto per contare i click azzeccati
             // [] Aggiungo il textContent della cella cliccata
-
-// Quando il giocatore  raggiunge il numero massimo possibile di numeri consentiti la partita termina
-    // [] Calcolare il numero massimo di tentativi possibili -> numberOfSquares - la lunghezza dell'array che contiene i numeri nelle quali si trovano le bombe
-    // [] Controllo, con l'if, se la variabile === lunghezza dell'array che conta i click azzeccati
-    // [] ?''La partita termina''?
 
 // Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.
     // [] Stampo un messaggio concatenando una stringa all'array.lenght con i click azzeccati
