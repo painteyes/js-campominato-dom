@@ -3,12 +3,6 @@
 // con difficoltà 2 => tra 1 e 81
 // con difficoltà 3 => tra 1 e 49
 
-
-
-
-
-
-
 // Il computer deve generare le bombe: 16 numeri casuali nel range tra 1 e 'numberOfSquares'. Inoltre i numeri nella lista non possono essere duplicati.
         // [] Creo un array vuoto che conterrà i numeri-bombe
         // [] Popolo, con un ciclo while, l'array con 16 numeri non duplicati compresi nel range tra 1 e 'numberOfSquares'
@@ -57,14 +51,12 @@
 // [] 2- quando si clicca su una bomba e finisce la partita, il software scopre tutte le bombe nascoste
 
 
-
-
 // CLICKING ON THE PLAY BUTTON SHOWS THE GRID WITH THE SQUARES
 document.getElementById('play').addEventListener('click', startGame);
 
 // -----------------------------------------------------------------------------------------------
 // FUNCTIONS RELATED TO DOM
-// -------------------------
+// ------------------------
 
 // CLICKING ON EACH SQUARE THE ACTIVE CLASS WILL BE ADDED TO THE CLICKED SQUARE
 function handleSquareClick() {
@@ -73,7 +65,7 @@ function handleSquareClick() {
 
 // -----------------------------------------------------------------------------------------------
 // FUNCTIONS
-// -------------------------
+// ---------
 
 // CREATING THE GRID WITH SQUARES
 function startGame() {  
