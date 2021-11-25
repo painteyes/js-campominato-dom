@@ -7,48 +7,66 @@
 // con difficoltà 2 => tra 1 e 81
 // con difficoltà 3 => tra 1 e 49
 
+// ---------
+// VARIABILI
+// ---------
+
 // Il computer deve generare le bombe: 16 numeri casuali nel range tra 1 e 'numberOfSquares'. Inoltre i numeri nella lista non possono essere duplicati.
         // [] Creo un array vuoto che conterrà i numeri-bombe
         // [] Popolo, con un ciclo while, l'array con 16 numeri non duplicati compresi nel range tra 1 e 'numberOfSquares'
 
 // [] Calcolo il numero massimo di tentativi possibili -> ((numberOfSquares) - (la lunghezza dell'array che contiene i numeri-bombe))
 
-// [] Creo un array vuoto per contare i click azzeccati
+// [] Creo un array vuoto che conterrà i numeri-non-bombe azzeccati dall'utente 
+
+// ---------
+// FUNZIONI
+// ---------
+
+// Creo la funzione per quando la partita termina
+
+
+
+// [x] Creo, con un ciclo for, le celle
 
 // [] Seleziono le singole celle e aggiungo un evento al click
 
-// L'utente clicca su una cella: 
-         
-    // La partita termina 
-                
-            // SE
-                // il numero è incluso nell'array che contiene i numeri-bombe
+
+
+// L'utente fa click su una cella: 
+
+    // Leggo il numero della cella
+
+        // SE
+
+                // l'utente fa click su un numero-bomba - cioè il numero della cella è incluso nell'array che contiene i numeri-bombe
                     // [] Controllo, con l'if, se l'array include il textContent della cella
-                
+                    
                     // la cella si colora di rosso
                         // [] Aggiungo la classe red alla cella
+                      
+                // l'utente raggiunge il numero massimo possibile di tentativi consentiti
+                    // [] Controllo, con l'if, se ((numberOfSquares) - (la lunghezza dell'array che contiene i numeri-bombe)) >= (lunghezza dell'array che contiene i numeri-non-bombe)
+                             
+            // La partita termina
+                // [] l'utente non può continuare a cliccare sulle altre celle             
                 
-                    // la partita termina
-                        // [] 
+        // ALTRIMENTI SE
 
-            // SE 
-                // il giocatore raggiunge il numero massimo possibile di tentativi consentiti
-                    // [] Controllo, con l'if, se ((numberOfSquares) - (la lunghezza dell'array che contiene i numeri nelle quali si trovano le bombe)) === (lunghezza dell'array che conta i click azzeccati)
-                        
-                        // la partita termina   
-                            // [] 
+                // l'utente fa click su un numero-non-bomba 
+                    // [] Controllo, con l'if, se l'array include il textContent della cella
 
-        
-    // ALTRIMENTI SE
-        // il numero non è già incluso nell'array che conta i click azzeccati
-            // [] Controllo, con l'if, se l'array include il textContent della cella
+                    // SE
 
-                // la cella cliccata si colora di azzurro e l'utente può continuare a cliccare sulle altre celle
-                    // [] Aggiungo una classe active alla cella 
-                    // [] Aggiungo il textContent della cella all'array che conta i click azzeccati
+                            // il numero non è stato indovinato in precedenza - cioè che non è già incluso nell'array che contiene i numeri-non-bombe
+                                // [] Controllo, con l'if, se l'array include il textContent della cella
+
+                        // la cella cliccata si colora di azzurro e l'utente può continuare a cliccare sulle altre celle
+                            // [] Aggiungo una classe active alla cella 
+                            // [] Aggiungo il textContent della cella all'array che che contiene i numeri-non-bombe
                 
-// Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.
-    // [] Stampo un messaggio concatenando una stringa all'array.lenght che conta i click azzeccati
+// Al termine della partita comunico il punteggio che è corrisponderà al numero di volte che l’utente ha cliccato su una cella che non era una bomba
+    // [] Stampo un messaggio concatenando una stringa + la lunghezza dell'array che che contiene i numeri-bombe
 
 // BONUS:
 // [] 1- quando si clicca su una bomba e finisce la partita, evitare che si possa cliccare su altre celle
@@ -121,7 +139,7 @@ function startGame() {
     }
 }
 
-// Create a grid element
+// CREATE A GRID ELEMENT 
 // number -> number to put in the square
 // squareSize -> form factor of the square
 function generateGridItem(number, squareSize) {
