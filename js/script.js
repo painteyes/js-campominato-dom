@@ -39,13 +39,6 @@
     
     // [] l'utente non può continuare a cliccare sulle altre celle
 
-
-
-
-// --------
-// LOGICA 
-// --------
-
 // L'utente fa click su una cella: 
 
     // Leggo il numero della cella
@@ -84,9 +77,9 @@
 // [] 1- quando si clicca su una bomba e finisce la partita, evitare che si possa cliccare su altre celle
 // [] 2- quando si clicca su una bomba e finisce la partita, il software scopre tutte le bombe nascoste
 
-// 
-// LOGICA
-// 
+// --------
+// LOGICA 
+// --------
 
 // CLICKING ON THE PLAY BUTTON SHOWS THE GRID WITH THE SQUARES
 document.getElementById('play').addEventListener('click', startGame);
