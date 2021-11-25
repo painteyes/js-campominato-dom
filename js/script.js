@@ -42,8 +42,7 @@
 
     // Quando l'utente fa click su una cella
 
-        // SE
-
+        // SE        
                 // l'utente fa click su un numero-bomba - cioè il numero della cella è incluso nell'array che contiene i numeri-bombe
                     // [] Controllo, con l'if, se l'array include il textContent della cella
                     
@@ -61,7 +60,6 @@
                     // [] Controllo, con l'if, se l'array include il textContent della cella
 
                     // SE
-
                             // il numero non è stato indovinato in precedenza - cioè che non è già incluso nell'array che contiene i numeri-non-bombe
                                 // [] Controllo, con l'if, se l'array include il textContent della cella
 
