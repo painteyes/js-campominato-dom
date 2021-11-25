@@ -25,8 +25,8 @@
 // [x] Creo una funzione che genera gli elementi
 // [x] Creo una funzione che genera un evento al click
 
-// Creo una funzione per la partita termina
-    // [] Legge l'argomento per sapere se il giocatore ha vinto o perso
+// Creo una funzione per la partita terminata
+    // [] Aggiungo l'argomento che servirà per sapere il giocatore ha vinto o perso
 
     // SE
 
@@ -40,7 +40,8 @@
 
 // Aggiungo nuove funzionalità alla funzione che genera un evento al click 
 
-    // Quando l'utente fa click su una cella (leggo il numero della cella):
+    // Quando l'utente fa click su una cella
+        //  leggo il numero della cella
 
         // SE
 
@@ -53,7 +54,7 @@
                 // l'utente raggiunge il numero massimo possibile di tentativi consentiti
                     // [] Controllo, con l'if, se ((numberOfSquares) - (la lunghezza dell'array che contiene i numeri-bombe)) >= (lunghezza dell'array che contiene i numeri-non-bombe)
                              
-            // La partita termina - cioè viene invocata la funzione per la partita termina
+            // La partita termina - cioè viene invocata la funzione per la partita terminata
                                      
         // ALTRIMENTI SE
 
