@@ -34,7 +34,7 @@
             // [] Stampa un messaggio: "Hai vinto"
 
         // l'utente ha perso - cioè l'argomento === "lose"
-            // [] Stampa un messaggio: "Hai perso, hai azzeccato (la lunghezza dell'array che contiene i numeri-bombe) tentativi"
+            // [] Stampa un messaggio: "Hai perso, hai azzeccato + (la lunghezza dell'array che contiene i numeri-bombe) + tentativi"
     
     // [] l'utente non può continuare a cliccare sulle altre celle
 
@@ -67,9 +67,6 @@
                             // [] Aggiungo una classe active alla cella 
                             // [] Aggiungo il textContent della cella all'array che che contiene i numeri-non-bombe
                 
-// Al termine della partita comunico il punteggio che è corrisponderà al numero di volte che l’utente ha cliccato su una cella che non era una bomba
-    // [] Stampo un messaggio concatenando una stringa + la lunghezza dell'array che che contiene i numeri-bombe
-
 // BONUS:
 // [] 1- quando si clicca su una bomba e finisce la partita, evitare che si possa cliccare su altre celle
 // [] 2- quando si clicca su una bomba e finisce la partita, il software scopre tutte le bombe nascoste
