@@ -21,7 +21,18 @@
 
 // FUNCTIONS //
 
-// [] Creo la funzione per quando la partita termina
+// Creo una funzione per la partita termina
+    // [] Legge l'argomento per sapere se il giocatore ha vinto o perso
+
+    // SE
+
+        // l'utente ha vinto - cioè raggiunge il numero massimo possibile di tentativi consentiti
+            // [] Stampa un messaggio: "Hai vinto"
+
+        // l'utente ha perso - cioè fa click su un numero-bomba
+            // [] Stampa un messaggio: "Hai perso, hai azzeccato (la lunghezza dell'array che contiene i numeri-bombe) tentativi"
+    
+    // [] l'utente non può continuare a cliccare sulle altre celle
 
 // FUNCTIONS RELATED TO THE DOM //
 
@@ -47,9 +58,8 @@
                 // l'utente raggiunge il numero massimo possibile di tentativi consentiti
                     // [] Controllo, con l'if, se ((numberOfSquares) - (la lunghezza dell'array che contiene i numeri-bombe)) >= (lunghezza dell'array che contiene i numeri-non-bombe)
                              
-            // La partita termina
-                // [] l'utente non può continuare a cliccare sulle altre celle             
-                
+            // La partita termina - cioè viene invocata la funzione per la partita termina
+                                     
         // ALTRIMENTI SE
 
                 // l'utente fa click su un numero-non-bomba 
