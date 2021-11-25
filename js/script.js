@@ -41,7 +41,6 @@
 // Aggiungo nuove funzionalità alla funzione che genera un evento al click 
 
     // Quando l'utente fa click su una cella
-        //  leggo il numero della cella
 
         // SE
 
