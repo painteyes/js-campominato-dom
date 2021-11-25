@@ -1,15 +1,15 @@
-// 
-// ANALISI
-// 
+// CONSEGNA
 
 // L'utente indica un livello di difficoltà in base al quale viene generata una griglia di gioco quadrata, in cui ogni cella contiene un numero tra quelli compresi in un range:
 // con difficoltà 1 => tra 1 e 100
 // con difficoltà 2 => tra 1 e 81
 // con difficoltà 3 => tra 1 e 49
 
-// ---------
-// VARIABILI
-// ---------
+// --------
+// ANALISI
+// --------
+    
+// VARIABLES //
 
 // Il computer deve generare le bombe: 16 numeri casuali nel range tra 1 e 'numberOfSquares'. Inoltre i numeri nella lista non possono essere duplicati.
         // [] Creo un array vuoto che conterrà i numeri-bombe
@@ -19,19 +19,18 @@
 
 // [] Creo un array vuoto che conterrà i numeri-non-bombe azzeccati dall'utente 
 
-// ---------
-// FUNZIONI
-// ---------
+// FUNCTIONS //
 
-// Creo la funzione per quando la partita termina
+// [] Creo la funzione per quando la partita termina
 
-
+// FUNCTIONS RELATED TO THE DOM //
 
 // [x] Creo, con un ciclo for, le celle
-
 // [] Seleziono le singole celle e aggiungo un evento al click
 
-
+// --------
+// LOGICA 
+// --------
 
 // L'utente fa click su una cella: 
 
@@ -79,18 +78,14 @@
 // CLICKING ON THE PLAY BUTTON SHOWS THE GRID WITH THE SQUARES
 document.getElementById('play').addEventListener('click', startGame);
 
-// ------------------------
-// FUNCTIONS RELATED TO DOM
-// ------------------------
+// ---------
+// FUNCTIONS 
+// ---------
 
 // CLICKING ON EACH SQUARE THE ACTIVE CLASS WILL BE ADDED TO THE CLICKED SQUARE
 function handleSquareClick() {
     this.classList.add('active');
 }
-
-// ---------
-// FUNCTIONS
-// ---------
 
 // CREATING THE GRID WITH SQUARES
 function startGame() {  
@@ -156,7 +151,7 @@ function generateGridItem(number, squareSize) {
     return newSquare;
 }
 
-// Generate an array with 'quantityOfNumbers' numbers in ascending order
+// GENERATE AN ARRAY with 'quantityOfNumbers' numbers in ascending order
 // quantityOfNumbers -> how many numbers should it generate
 function generateSquaresNumbers (quantityOfNumbers) {
 
