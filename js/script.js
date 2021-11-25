@@ -8,7 +8,7 @@
 // --------
 // ANALISI
 // --------
-    
+ 
 // VARIABLES //
 
 // Il computer deve generare le bombe: 16 numeri casuali nel range tra 1 e 'numberOfSquares'. Inoltre i numeri nella lista non possono essere duplicati.
@@ -19,6 +19,11 @@
 
 // [] Creo un array vuoto che conterrà i numeri-non-bombe azzeccati dall'utente 
 
+// FUNCTIONS RELATED TO THE DOM //
+
+// [x] Creo, con un ciclo for, le celle
+// [] Seleziono le singole celle e aggiungo un evento al click
+
 // FUNCTIONS //
 
 // Creo una funzione per la partita termina
@@ -26,18 +31,16 @@
 
     // SE
 
-        // l'utente ha vinto - cioè raggiunge il numero massimo possibile di tentativi consentiti
+        // l'utente ha vinto - cioè l'argomento === "win"
             // [] Stampa un messaggio: "Hai vinto"
 
-        // l'utente ha perso - cioè fa click su un numero-bomba
+        // l'utente ha perso - cioè l'argomento === "lose"
             // [] Stampa un messaggio: "Hai perso, hai azzeccato (la lunghezza dell'array che contiene i numeri-bombe) tentativi"
     
     // [] l'utente non può continuare a cliccare sulle altre celle
 
-// FUNCTIONS RELATED TO THE DOM //
 
-// [x] Creo, con un ciclo for, le celle
-// [] Seleziono le singole celle e aggiungo un evento al click
+
 
 // --------
 // LOGICA 
