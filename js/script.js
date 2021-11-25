@@ -19,12 +19,11 @@
 
 // [] Creo un array vuoto che conterrà i numeri-non-bombe azzeccati dall'utente 
 
-// FUNCTIONS RELATED TO THE DOM //
-
-// [x] Creo, con un ciclo for, le celle
-// [] Seleziono le singole celle e aggiungo un evento al click
-
 // FUNCTIONS //
+
+// [x] Creo una funzione che genera la griglia
+// [x] Creo una funzione che genera gli elementi
+// [x] Creo una funzione che genera un evento al click
 
 // Creo una funzione per la partita termina
     // [] Legge l'argomento per sapere se il giocatore ha vinto o perso
@@ -39,9 +38,9 @@
     
     // [] l'utente non può continuare a cliccare sulle altre celle
 
-// L'utente fa click su una cella: 
+// Aggiungo nuove funzionalità alla funzione che genera un evento al click 
 
-    // Leggo il numero della cella
+    // Quando l'utente fa click su una cella (leggo il numero della cella):
 
         // SE
 
